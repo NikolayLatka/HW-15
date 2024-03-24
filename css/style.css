@@ -1,0 +1,42 @@
+.holder {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: navajowhite;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    vertical-align: center;
+}
+
+.item:nth-child(1) {
+    background-color: tomato;
+    order: -3;
+}
+
+.item:nth-child(2){
+    background-color: blue;
+}
+
+.item:nth-child(3){
+    background-color: blueviolet;
+    order: -1;
+}
+
+.item:nth-child(4){
+    background-color: green;
+}
+
+.item:nth-child(5){
+    background-color: yellow;
+    order: -2;
+}
+
+.item:first-child:last-child {
+    flex-grow: 1;
+}
